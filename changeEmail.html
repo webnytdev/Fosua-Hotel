@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fosua Hotel</title>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <button class="back-button" onclick="goBack()"><i id="back-btn" class="fas fa-arrow-left"></i></button>
+         <h4>Settings</h4>
+         <span> </span>
+     </div>
+
+
+<section class="page login-page">
+    <h3>Change Email</h3>
+    <div>
+        <div class="bubble">
+
+        </div>
+
+        <div class="login-cont">
+            <form action="">
+                <div class="err">
+                    <p class="sc-mess">
+                        Email changed sucessfully
+                    </p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Enter Old Email" required>
+                </div>
+
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Enter New Email" required>
+                </div>
+
+
+                <div>
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Enter Password" required>
+                </div>
+       
+        
+                <button>Change</button>
+               </form>
+        </div>
+    </div>
+
+</section>
+</body>
+
+</html>

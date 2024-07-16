@@ -1,0 +1,1132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+header{
+    
+    background-image: url('../images/IMG_8383.JPG');
+    filter: brightness(.95);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+   
+  
+    
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,.7);
+    padding: 0 2rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    
+   
+}
+#navbar{
+    background-color: white;
+}
+.navbar img{
+    width: 7rem;
+}
+
+.navbar .bars{
+    display: none;
+}
+
+.navbar .nav-lists{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-lists li{
+    font-size: 1.2rem;
+    list-style: none;
+   cursor: pointer; 
+   transition: all .4s ease-in-out;
+   position: relative;
+}
+
+.nav-lists .profile{
+background-color: #eee;
+padding: .4rem .6rem;
+border-radius: 50%;
+}
+.nav-lists .profile a{
+    font-size: 1rem;
+}
+
+.nav-lists #active::before{
+    content: "";
+    width: 60%;
+    height: .2rem;
+    background-color: rgb(194, 172, 8);
+    position: absolute;
+    top: 1.6rem;
+
+}
+.nav-lists #active a{
+    color: rgb(79, 174, 20);
+}
+.nav-lists li:hover{
+    transform: scaleX(1.2);
+}
+.nav-lists #active:hover ::before{
+    content: "";
+    width: 100%;
+    height: .2rem;
+    background-color: rgb(21, 182, 94);
+    position: absolute;
+    top: 1.6rem;
+    transition: all .5s ease-in-out;
+}
+.nav-lists li a{
+    color: gold;
+    text-decoration: none;
+
+}
+
+.welcome-message{
+    margin-top: 12rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+ 
+}
+
+.welcome-message h2{
+    color: white;
+    font-size: 2.4rem;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.welcome-message p{
+    color: #c8d210;
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 30rem;
+}
+.welcome-message .welcome-btns{
+    display: flex;
+    gap: 1.4rem;
+}
+.welcome-message .welcome-btns button{
+    border: 1px solid #eee;
+    padding: .6rem 4rem;
+    border-radius: 6rem;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.welcome-message .welcome-btns button:hover{
+    transform: scale(1.1);
+}
+
+.welcome-message .welcome-btns .to_rooms_btn{
+    background-color: orange;
+    border: 1px solid orange;
+}
+.welcome-message .welcome-btns .to_foods_btn{
+    background: transparent;
+}
+
+.welcome-message .welcome-btns button a{
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/*ABOUT US */
+
+.page{
+    margin-top: 5rem;
+    padding: 2rem 3%;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.about h3{
+    font-size: 2rem;
+    border-bottom: 3px solid orange;
+    padding-bottom: .3rem;
+}
+.about > div{
+display: flex;
+gap: 3rem;
+align-items:center;
+justify-content: space-between;
+
+}
+
+.about .image{
+    flex: 1;
+}
+
+.about .text{
+    flex: 1;
+}
+.about .text p{
+  
+    line-height: 2.5rem;
+    color: #333;
+    text-align: center;
+    font-size: 1.1rem;
+    
+}
+.about .image img{
+    width: 90%;
+}
+
+
+/* Footer */
+footer{
+    background-color: rgb(98, 45, 28);
+    box-shadow: 0 .5rem  1.5rem rgba(0,0,0,0.9);
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    
+}
+.footer-container h4{
+    color: rgb(208, 180, 180);
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+.footer-container ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7rem;
+}
+.footer-container li{
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+  
+}
+.footer-container a{
+color: #c3a626;
+transition: all .3s ease-in-out;
+opacity: 1;
+}
+
+.footer-container a:hover{
+    /* color: #b696d9 ; */
+    letter-spacing: .1rem;
+    opacity: .5;
+}
+
+.footer-copyright{
+    align-self: center;
+    color: #a69c9c;
+    font-size: 1.1rem;
+
+}
+
+.footer-copyright small{
+    text-align: center;
+}
+.footer-copyright small span{
+    display: block;
+    margin-top: .3rem;
+    text-align: center;
+}
+
+/* CONTACT */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+}
+.contact h3{
+    font-size: 2rem;
+    border-bottom: 3px solid orange;
+    padding-bottom: .3rem;
+}
+
+.contact > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.contact .send-message{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.send-message h4{
+    font-size: 1.5rem;
+    color: #333;
+}
+
+form{
+background-color: white;
+box-shadow:0 .5rem 1.5rem rgba(0,0,0,.2);
+width: 100%;
+padding: 2rem;
+display: flex;
+flex-direction: column;
+gap: 2.5rem;
+border-radius: 1rem;
+}
+
+form div{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    position: relative;
+}
+form div i{
+    color: #797171;
+    position: absolute;
+    top: .6rem;
+}
+form input, form textarea{
+    width: 100%;
+    padding: .4rem .7rem .4rem 1.6rem;
+    font-size: 1.1rem;
+    min-width: 20rem;
+    outline: none;
+    color: #333;
+}
+form input{
+    border: 0;
+    border-bottom: 2px solid #eee;
+}
+form button{
+    align-self: center;
+    padding: .4rem 1rem;
+    border: 0;
+    color: white;
+    background-color: orange;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+form button a{
+    color: white;
+    text-decoration: none;
+}
+form button:hover{
+    opacity: .8;
+}
+.contact .message-box.active{
+    display: block;
+}
+.contact .message-box{
+    background-color: white;
+    padding: 3rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7rem;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: all .4s ease-in;
+    
+}
+.message-box p{
+    font-size: 1.1rem;
+}
+.message-box i{
+    margin-left: .3rem;
+    color: green;
+}
+.message-box button{
+    padding: .3rem .9rem;
+    border: 0;
+    color: white;
+    background-color: orange;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.message-box button:hover{
+    opacity: .8;
+}
+.contact .contact-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 29, 29);
+    color: rgb(213, 207, 207);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.contact-info > div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    border-bottom: 1px dashed rgb(82, 76, 76);
+    font-size: 1.1rem;
+}
+.contact-info i{
+    color: orange;
+}
+
+/*LOGIN */
+
+
+.login-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+}
+.login-page h3{
+    font-size: 2rem;
+    border-bottom: 3px solid orange;
+    padding-bottom: .3rem;
+}
+
+.login-page > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+}
+
+ .bubble{
+    position: absolute;
+    width: 40rem;
+    height: 25rem;
+    border-top-right-radius: 57rem;
+    border-bottom-right-radius: 5rem;
+    border-top-left-radius: 12rem;
+    background-color: rgba(255, 166, 0, 0.564);
+    left: -25rem;
+    transform: rotateY(45deg);
+    top: -2rem;
+    opacity: .7;
+    
+}
+
+.login-cont{
+    z-index: 10;
+}
+
+/*ROOM */
+
+.rooms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+}
+.rooms h3{
+    font-size: 2rem;
+    border-bottom: 3px solid orange;
+    padding-bottom: .3rem;
+}
+
+.all-rooms{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+.room{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 20rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.3);
+    padding: 1rem;
+    background-color: white;
+}
+.room-info .equip {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+row-gap: 1rem;
+column-gap: 1rem;
+
+}
+.equip div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+}
+.equip i{
+    color: rgb(154, 67, 9);
+}
+.room .image .swiper{
+    width: 100%;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-pagination{
+    background-color: rgb(231, 222, 222);
+    padding: .2rem;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: white;
+    padding: .3rem;
+}
+
+.room-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+ 
+}
+.name_price{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+.name_price h4{
+    font-size: 1.2rem;
+}
+
+.availability b{
+    color: green;
+}
+.availability b.none{
+    color: red;
+}
+
+.room-info button{
+    padding: .3rem .9rem;
+    border: 0;
+    color: white;
+    background-color: orange;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.room-info button a{
+    color: white;
+    text-decoration: none;
+}
+.room-info button:hover{
+    opacity: .8;
+}
+
+/*BOOK */
+
+.book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+}
+.book h3{
+    font-size: 2rem;
+    border-bottom: 3px solid orange;
+    padding-bottom: .3rem;
+}
+
+.book > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+}
+
+.book-form{
+    z-index: 10;
+
+}
+.bubble1{
+    position: absolute;
+    width: 40rem;
+    height: 25rem;
+    border-top-right-radius: 57rem;
+    border-bottom-right-radius:25rem;
+    border-top-left-radius: 12rem;
+    border-bottom-left-radius: 55rem;
+    background-color: rgba(209, 115, 15, 0.942);
+    left: -27rem;
+    transform: rotateY(45deg);
+    top: -2rem;
+    opacity: .7;
+}
+.book form button a{
+    color: white;
+    text-decoration: none;
+}
+
+.after_book{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 70vh;
+}
+
+
+.after_book div{
+    background-color: white;
+    padding: 3rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7rem;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+   
+    transition: all .4s ease-in;
+    
+}
+.after_book div p{
+    font-size: 1rem;
+    text-align: center;
+}
+.after_book div i{
+    margin-left: .3rem;
+    color: green;
+}
+.after_book div button{
+    padding: .3rem .9rem;
+    border: 0;
+    color: white;
+    background-color: orange;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.after_book div button:hover{
+    opacity: .8;
+}
+
+/*ADMIN'S DASHBOARD */
+.account{
+    margin-top: 7rem;
+    align-items: flex-start;
+    justify-content: center;
+  
+}
+
+.account > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+   
+}
+
+.account  li{
+    list-style: none;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+    padding: .6rem ;
+    font-size: 1.1rem;
+    color: #333;
+   ;
+}
+
+.account li a{
+    color: #333;
+    display: flex;
+    gap: 1rem;
+}
+
+.account > ul li > ul{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+}
+.account > ul .settings{
+position: relative;
+height: 7rem;
+
+}
+.account > ul li > .hidden{
+    position: absolute;
+    top: 3rem;
+   
+}
+
+.account > ul li > ul >li{
+    color: orange;
+    cursor: pointer;
+    
+}
+.account  ul li a{
+text-decoration: none;
+}
+
+/*HEADER */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    padding: 1rem 2rem;
+    z-index: 100;
+}
+
+.header a{
+    font-size: 1.2rem;
+}
+
+.header h4{
+    font-size: 1.5rem;
+}
+
+.header button{
+    border: 0;
+    color: blue;
+    background-color: white;
+}
+/*BOOKINGS */
+
+.bookings ul, .f-bookings ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   
+
+}
+
+.bookings ul li{
+    list-style: none;
+    background-color: white;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.3);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   row-gap: 1rem; 
+   column-gap: 1rem;
+   padding: 1rem;
+}
+.f-bookings ul li{
+    list-style: none;
+    background-color: white;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.3);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+   row-gap: 1rem; 
+   column-gap: 1rem;
+   padding: 1rem;
+}
+.bookings ul li div, .f-bookings ul li div{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.bookings ul li div b{
+    color: #231f1f;
+}
+
+.f-bookings ul li div b{
+    color: #231f1f;
+    text-decoration: line-through;
+}
+
+.err{
+    align-self: center;
+}
+.sc-mess{
+    background-color: green;
+    padding: .3rem 1rem;
+    color: white;
+}
+
+.err-mess{
+    background-color: red;
+    padding: .3rem 1rem;
+    color: white;
+}
+
+
+.room-settings ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.room-settings ul li{
+    list-style: none;
+    background-color: white;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.3);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   row-gap: 1rem; 
+   column-gap: 1rem;
+   padding: 1rem;
+   place-items: center;
+}
+
+
+@media screen and (max-width:1045px) {
+    .all-rooms{
+     
+        grid-template-columns:  1fr 1fr ;
+      
+    }
+ 
+}
+
+/* TABLET VIEW */
+
+@media screen and (max-width: 800px) {
+
+    .navbar .bars{
+        display: block;
+        color: orange;
+    }
+    #showBtn{
+        display: block;
+        transition: all .3s ease-in;
+    }
+
+    #showBtn.dissapear{
+        display: none;
+        transition: all .3s ease-in;
+    }
+    #hideBtn{
+        display: none;
+        transition: all .3s ease-in;
+    }
+
+    #hideBtn.appear{
+        display: block;
+        transition: all .3s ease-in;
+    }
+    .navbar img{
+        width: 5rem;
+    }
+    
+    .navbar .nav-lists{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: -20rem;
+        background-color: white;
+        top: 5.27rem;
+        padding: 1rem 0 0 0;
+        gap: 0rem;
+        align-items: center;
+        box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.5);
+       transition: all .9s ease-in-out;
+       z-index: 1000;
+    }
+
+    .navbar .nav-lists.active{
+        right: 0rem;
+
+    }
+    .nav-lists li:first-child{
+        padding-top: 1rem;
+        border: 0;
+    }
+
+    .nav-lists li{
+        font-size: 1.2rem;
+        padding: 1.5rem 3rem;
+        border-top: 1px solid #eee;
+        width: 100%;
+        text-align: center;
+       
+    }
+
+    .nav-lists #active::before{
+        width: 20%;
+        top: 3rem;
+    }
+
+    .nav-lists li:hover{
+        transform: scaleY(1.2);
+    }
+    .nav-lists #active:hover ::before{
+        width: 30%;
+        top: 3rem;
+        
+    }
+
+    
+
+
+.welcome-message h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.welcome-message .welcome-btns{
+ flex-direction: column;
+}
+
+/*LOGIN */
+
+
+
+
+.login-page > div{
+    flex-direction: column;
+}
+/*FORM */
+
+
+form{
+    background-color: white;
+    box-shadow:0 .5rem 1.5rem rgba(0,0,0,.2);
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    border-radius: 1rem;
+    }
+    
+    form div{
+        display: flex;
+        align-items: center;
+        gap: .3rem;
+        position: relative;
+    }
+  
+    /* CONTACT */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+}
+.contact h3{
+    font-size: 2rem;
+    border-bottom: 3px solid orange;
+    padding-bottom: .3rem;
+}
+
+.contact > div{
+   flex-direction: column;
+    gap: 4rem;
+}
+
+.contact .send-message{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.send-message h4{
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Footer */
+
+
+.footer-container{
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+    
+}
+
+
+
+/*ABOUT */
+.about{
+    padding: 1rem 6%;
+    margin-bottom: 3rem;
+}
+
+.about > div{
+flex-direction: column;
+
+}
+
+.about .image img{
+    width: 100%;
+}
+
+
+/*ROOMS */
+.rooms h3{
+    font-size: 2rem;
+    border-bottom: 3px solid orange;
+    padding-bottom: .3rem;
+}
+
+
+.room{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 20rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.3);
+    padding: 1rem;
+    background-color: white;
+}
+.room-info .equip {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+row-gap: 1rem;
+column-gap: 1rem;
+
+}
+
+/*FINISHED BOOKINGS */
+.f-bookings ul li{
+    grid-template-columns: 1fr 1fr 1fr  ;
+   row-gap: 2rem; 
+}
+
+.bookings ul li{
+    grid-template-columns: 1fr 1fr 1fr  ;
+   row-gap: 2rem; 
+}
+
+
+    
+}
+
+
+@media screen and (max-width: 730px) {
+
+ 
+    .all-rooms{
+      
+        grid-template-columns:  1fr ;
+      
+    }
+    .room{
+ 
+        max-width: 25rem;
+    
+    }
+
+    .f-bookings ul li, .bookings ul li{
+        grid-template-columns: 1fr 1fr  ;
+       row-gap: 2rem; 
+       place-items: center;
+    }
+    .f-bookings ul li div b, .bookings ul li div b{
+        text-align: center;
+    }
+    .f-bookings ul li div, .bookings ul li div{
+        align-items: center;
+    }
+    .f-bookings ul, .bookings ul{
+        padding: 2rem;
+    }
+}
+
+/*MOBILE PHONES */
+
+@media screen and (max-width:470px) {
+
+    form input, form textarea{
+        min-width: 15rem;
+     
+    }
+
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 3rem;
+        
+    }
+    .room{
+ 
+        max-width: 20rem;
+    
+    }
+
+    .f-bookings ul li, .bookings ul li{
+        grid-template-columns: 1fr  ;
+       row-gap: 2rem; 
+       place-items: center;
+    }
+
+    .f-bookings ul li div, .bookings ul li div{
+        align-items: center;
+    }
+    .f-bookings ul, .bookings ul{
+        padding: 2rem;
+    }
+}
+
+/* SMALL PHONES */
+
+@media screen and (max-width: 360px) {
+
+    
+.welcome-message{
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+ 
+}
+
+.welcome-message h2{
+    font-size: 1.9rem;
+}
+
+.welcome-message p{
+    font-size: 1rem;
+
+}
+.welcome-message .welcome-btns button{
+    padding: .5rem 2rem;
+
+}
+.room{
+ 
+    max-width: 15rem;
+
+}
+.room-info .equip {
+    grid-template-columns: 1fr 1fr;
+}
+}
